@@ -25,7 +25,7 @@ public class UserController {
         // "-" 뒤와 "." 앞의 사번 추출
         String[] parts = host.split("\\.");
         if (parts.length > 0 && parts[0].contains("-")) {
-            return parts[0].split("-")[1];
+            return parts[0].split("-")[0];
         } else {
             return "Invalid Host Format";
         }
